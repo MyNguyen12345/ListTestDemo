@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout  xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="UserViewModel"
+            type="com.example.listdemotest.model.UserModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/img_avatar"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerCrop"
+            android:src="@{UserViewModel.avatar_url}"></ImageView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{UserViewModel.login}"
+                android:textSize="20sp"
+                android:textColor="@android:color/black">
+            </TextView>
+            <TextView
+                android:id="@+id/tv_html_url"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@{UserViewModel.html_url}"
+                android:textSize="15sp"
+                android:textColor="@android:color/black">
+            </TextView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</layout>
