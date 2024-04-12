@@ -26,6 +26,12 @@ public class MyAdapter extends  RecyclerView.Adapter<MyAdapter.MyViewHolder>{
 //    private Context context;
     private IClickItemListener mIClickItemListener;
 
+
+    public void setData(List<UserModel> list){
+        this.listUser=list;
+        notifyDataSetChanged();
+    }
+
     public interface IClickItemListener{
         void onClickDetailUser(int id);
     }
