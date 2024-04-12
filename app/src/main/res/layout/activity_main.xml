@@ -38,8 +38,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:layout_marginStart="10dp"
-            app:is_success="@{MainViewModel.isSuccess}"
-            app:list_data="@{MainViewModel.list}">
+            app:list_data="@{MainViewModel.userListLiveData}">
         </androidx.recyclerview.widget.RecyclerView>
     </LinearLayout>
 

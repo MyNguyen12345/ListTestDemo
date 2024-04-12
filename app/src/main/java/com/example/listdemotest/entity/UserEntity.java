@@ -1,8 +1,13 @@
-package com.example.listdemotest.model;
+package com.example.listdemotest.entity;
 
 
-public class UserModel {
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
 
+@Entity(tableName = "user_table")
+public class UserEntity {
+
+    @PrimaryKey(autoGenerate = true)
     private int id;
     private String html_url;
     private String avatar_url;
@@ -40,3 +45,4 @@ public class UserModel {
         this.login = login;
     }
 }
+

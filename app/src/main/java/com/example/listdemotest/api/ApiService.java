@@ -1,5 +1,9 @@
 package com.example.listdemotest.api;
 
+import androidx.room.Dao;
+import androidx.room.Insert;
+import androidx.room.Query;
+
 import com.example.listdemotest.model.UserDetailModel;
 import com.example.listdemotest.model.UserModel;
 
@@ -13,8 +17,8 @@ import retrofit2.Retrofit;
 import retrofit2.adapter.rxjava3.RxJava3CallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
 import retrofit2.http.GET;
-import retrofit2.http.Part;
 import retrofit2.http.Path;
+
 
 public interface ApiService {
     HttpLoggingInterceptor loggingInterceptor= new HttpLoggingInterceptor()
@@ -39,4 +43,5 @@ public interface ApiService {
 
     @GET("users/{id}")
     Observable<UserDetailModel> callApiUser(@Path("id") int id);
+
 }
