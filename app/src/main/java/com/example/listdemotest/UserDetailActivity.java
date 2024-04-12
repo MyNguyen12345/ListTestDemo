@@ -1,6 +1,5 @@
 package com.example.listdemotest;
 
-import android.content.Context;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.Toast;
@@ -13,6 +12,7 @@ import androidx.lifecycle.ViewModelProvider;
 import com.bumptech.glide.Glide;
 import com.example.listdemotest.databinding.UserDetailBinding;
 import com.example.listdemotest.model.UserDetailModel;
+import com.example.listdemotest.viewModel.UserDetailViewModel;
 
 
 public class UserDetailActivity extends AppCompatActivity{

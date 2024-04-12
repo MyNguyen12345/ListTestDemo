@@ -5,7 +5,7 @@
     <data>
         <variable
             name="MainViewModel"
-            type="com.example.listdemotest.MainViewModel" />
+            type="com.example.listdemotest.viewModel.MainViewModel" />
     </data>
     <LinearLayout
         android:layout_width="match_parent"

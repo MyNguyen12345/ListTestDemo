@@ -1,4 +1,4 @@
-package com.example.listdemotest;
+package com.example.listdemotest.viewModel;
 import androidx.databinding.ObservableBoolean;
 import androidx.databinding.ObservableField;
 import androidx.lifecycle.ViewModel;

@@ -5,7 +5,7 @@
 
         <variable
             name="userDetailViewModel"
-            type="com.example.listdemotest.UserDetailViewModel" />
+            type="com.example.listdemotest.viewModel.UserDetailViewModel" />
     </data>
 
     <LinearLayout

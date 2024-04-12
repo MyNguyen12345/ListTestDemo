@@ -5,21 +5,18 @@ import androidx.databinding.BindingAdapter;
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ObservableArrayList;
 import androidx.databinding.ObservableBoolean;
-import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.listdemotest.adapter.MyAdapter;
 import com.example.listdemotest.databinding.ActivityMainBinding;
 import com.example.listdemotest.model.UserModel;
-
-import java.util.List;
+import com.example.listdemotest.viewModel.MainViewModel;
 
 public class MainActivity extends AppCompatActivity {
     @Override
